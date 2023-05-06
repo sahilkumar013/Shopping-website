@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Varela&family=Varela+Round&display=swap");
+* {
+  font-family: Philosopher;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar p {
+  padding: 20px;
+}
+.navbar p a {
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(180, 176, 176);
+}
+.navbar ul li a:hover {
+  color: white;
+}
+.cart {
+  margin-right: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.heading {
+  margin-left: 30px;
+  flex-basis: 40%;
+  /* border: 2px solid red; */
+  height: 90vh;
+}
+.heading h1 {
+  color: black;
+  font-size: 3rem;
+  padding: 1rem;
+}
+.image-part {
+  flex-basis: 60%;
+  /* border: 2px solid red; */
+  height: 90vh;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.image-part img {
+  height: 70vh;
+}
+
+#login,
+#sing {
+  margin: 20px;
+  padding: 5px 15px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+  box-shadow: 0 0 10px 2px rgba(204, 201, 201, 0.5);
+}
+#login:hover,
+#sing:hover {
+  box-shadow: 0 0 10px 5px rgba(204, 201, 201, 2);
+}
+
+#login a,
+#sing a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}

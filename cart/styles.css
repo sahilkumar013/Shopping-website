@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+.userInfo {
+  margin-left: 10px;
+}
+input[type="range"] {
+  width: 100%;
+  height: 2px;
+  margin: 1rem auto;
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-items a {
+  margin: 0 1rem;
+}
+
+main {
+  display: flex;
+}
+
+main-content section {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+main-content section title {
+  display: block;
+  font-size: 1.5rem;
+}
+
+main-content .items {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 70%;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+main-content .items .item {
+  border: 1px solid black;
+  width: 22%;
+  min-width: 200px;
+  height: 500px;
+  position: relative;
+}
+
+main-content .items .item img {
+  max-width: 100%;
+  min-width: 165px;
+  height: 55%;
+  object-fit: contain;
+}
+
+main-content .items .item .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+main-content .items .item .info {
+  padding: 1rem;
+}
+main-content .items .item button {
+  width: 100%;
+  border-radius: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+}
+
+main-content .items .item .colors {
+  display: flex;
+  margin: 1rem 0;
+}
+
+main-content .items .item .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 938px) {
+  main-content .items .item img {
+    height: 55%;
+  }
+  main-content .items .item {
+    height: 400px;
+  }
+}
+.totalAmt {
+  width: 300px;
+  margin-top: 15px;
+  height: fit-content;
+  border: 1px solid rgb(18, 17, 17);
+  background-color: black;
+  color: white;
+  display: none;
+  flex-flow: row wrap;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+.price,
+.amt,
+.tamt {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.totalAmt div {
+  display: flex;
+  justify-content: center;
+}
+
+#paying {
+  padding: 8px 15px;
+  border: 1px solid rgb(15, 14, 14);
+  width: 150px;
+  box-shadow: 0 0 10px 2px rgb(139 133 133 / 50%);
+  background-color: black;
+  color: white;
+  margin: 10px auto;
+}
+#paying:hover {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.items h1 {
+  text-align: center;
+  font-family: Varela Round;
+  width: fit-content;
+  margin: 50px auto;
+}
